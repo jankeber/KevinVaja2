@@ -8,16 +8,15 @@ public class KevinVaja2
 		2)  Izpiši vsa liha števila med 50 in 100 (meji sta vključeni).
 		izpis naj bo v eni vrstici. Števila naj bodo ločena s presledki
 		*/
-		
-		int stevec2 = 50;
+		int stevec;
 		String sodaStevila = "";
-		while(stevec2 <= 100)
+		for(stevec = 50; stevec <= 100; stevec++)
 		{
-			if(stevec2 % 2 == 0)
+			if(stevec % 2 == 0)
 			{
-				sodaStevila = sodaStevila + stevec2 + " ";
+				sodaStevila = sodaStevila + stevec + " ";
 			}
-			stevec2++;
+			stevec++;
 		}
 		System.out.print(sodaStevila);
 	}
